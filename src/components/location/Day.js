@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../assets/weather-icons/d000.png'
+import '../../styles/Day.scss';
 
 const Day = ({ day }) => {
 

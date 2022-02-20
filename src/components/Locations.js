@@ -1,5 +1,6 @@
 import React from 'react'
 import Location from './Location.js'
+import '../styles/Locations.scss';
 
 const Locations = ({ locations }) => {
 

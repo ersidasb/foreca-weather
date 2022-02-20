@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../styles/Location.scss';
 
 const Location = ({id, name, country}) => {
     return (

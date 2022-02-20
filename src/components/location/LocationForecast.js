@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import Days from './Days'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import '../../styles/LocationForecast.scss';
 
 const LocationForecast = () => {
     //location id
