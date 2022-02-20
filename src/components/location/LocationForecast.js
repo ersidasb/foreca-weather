@@ -103,11 +103,11 @@ const LocationForecast = () => {
     }, [current])
 
     if(exists == null)
-        return (<div className='info-message'>Loading</div>)
+        return (<div className='loading-spinner'></div>)
     if(!exists)
         return (<div className='info-message'>Location doesn't exist</div>)
     if(current == null)
-        return (<div className='info-message'>Loading</div>)
+        return (<div className='loading-spinner'></div>)
     return (
         <div className='forecast-container'>
             <div className='forecast-top-left'>
