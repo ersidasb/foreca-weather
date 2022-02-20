@@ -21,6 +21,7 @@ function App() {
             <Locations locations={locations}/>
           </Route>
           <Route path="/location/:id">
+            <Navbar passLocations={getLocations} />
             <LocationForecast />
           </Route>
         </Switch>

@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 require('dotenv').config()
 
 const app = express()
+
 const port = process.env.PORT
 const apiKey = process.env.API_KEY
 const mongoPassword = process.env.MONGO_PASSWORD

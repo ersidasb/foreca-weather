@@ -5,6 +5,10 @@
 
 In the backend directory, you can run:
 
+### `npm install`
+
+Installs all required packages
+
 ### `node app.js`
 
 Runs the backend server on port 5000
@@ -12,6 +16,10 @@ Runs the backend server on port 5000
 ## Starting the app
 
 In the project directory, you can run:
+
+### `npm install`
+
+Installs all required packages
 
 ### `npm start`
 
