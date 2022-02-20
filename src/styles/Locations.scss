@@ -1,0 +1,28 @@
+.locationCard-wrapper{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 40px;
+  padding: 40px;
+  margin: auto;
+  width: max-content;
+}
+@media (max-width: 1240px) {
+    .locationCard-wrapper{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 1024px) {
+    .locationCard-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .locationCard-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 540px) {
+    .locationCard-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Locations from './components/Locations.js'
+import LocationForecast from './components/location/LocationForecast.js'
 
 function App() {
+  //locations list for rendering Locations component
+  const [locations, setLocations] = useState([])
+  //setter for locations, used to get locations from Navbar component
+  const getLocations = (_locations) => {
+    setLocations(_locations)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Navbar passLocations={getLocations} />
+            <Locations locations={locations}/>
+          </Route>
+          <Route path="/location/:id">
+            <LocationForecast />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

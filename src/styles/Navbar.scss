@@ -1,0 +1,25 @@
+.logo{
+    width: 180px;
+    height: 40px;
+}
+.errorLabel{
+    color:red;
+    margin-left: 20px;
+}
+.navbar{
+    padding: 20px;
+}
+.search-input{
+    width: 100%;
+    margin-right: 10px;
+    padding: 5px;
+    transition: 0.1s;
+}
+.search-input:focus{
+    box-shadow: 0 0 10px black;
+}
+@media screen and (max-width: 450px) {
+    .errorLabel {
+        text-align: center;
+    }
+}

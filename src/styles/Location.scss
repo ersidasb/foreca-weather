@@ -1,0 +1,24 @@
+.locationCard {
+    width: 180px;
+    height: 170px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 40px;
+    color: black;
+    text-decoration: none;
+    transition: 0.05s;
+    box-shadow: 0px 0px 20px black;
+}
+.locationCard:hover {
+    background-color:lightgray;
+    transform: scale(1.1);
+    color: black;
+}
+.locationCard-content {
+    padding: 5px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}

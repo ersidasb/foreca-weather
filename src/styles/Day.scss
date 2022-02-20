@@ -1,0 +1,21 @@
+.dayCard {
+    flex: 0 0 70px;
+    padding: 5px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    background-image: linear-gradient(white, gray);
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 0 8px black;
+    
+}
+.dayCard img{
+    width: 50px;
+}
+.day-min-max{
+    font-size: 10pt;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
