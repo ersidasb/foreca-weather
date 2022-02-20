@@ -15,7 +15,7 @@ Runs the backend server on port 5000
 
 ## Starting the app
 
-In the project directory, you can run:
+In the frontend directory, you can run:
 
 ### `npm install`
 
@@ -28,7 +28,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Running unit tests
 
-In the project directory, you can run:
+In the frontend directory, you can run:
 
 ### `npm test`
 
